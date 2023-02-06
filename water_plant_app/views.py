@@ -133,7 +133,7 @@ def add_plants(request):
                 description=description,
                 
             )
-            messages.success(request, 'Plant Added Successfully! You can continue uploading more plants or go all plants table')
+            messages.success(request, 'Plant Added Successfully! You can continue uploading more plants or view all plants!')
         return redirect('/plants/form')
     else:
         plant = PlantForm() 
